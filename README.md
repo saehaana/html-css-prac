@@ -1,2 +1,2 @@
-learning html5,css,javascript to create personal website portfolio
-https://saehaana.github.io/ to view 
+learning html5, css, and javascript to create a personal website portfolio
+go to https://saehaana.github.io/ to view 
