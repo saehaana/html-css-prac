@@ -1,3 +1,12 @@
+/*element selector uses just name*/
 h1{
     font-family: Arial, Helvetica, sans-serif;  
+}
+/*class selector uses .*/
+.nav{
+    font-family: Arial, Helvetica, sans-serif
+}
+/*id selector uses # */
+#indexBackground{
+    width:90%;
 }
