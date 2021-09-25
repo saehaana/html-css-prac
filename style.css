@@ -10,3 +10,15 @@ h1{
 #indexBackground{
     width:90%;
 }
+/*ul - unordered list*/
+ul{
+    background-color: rgb(73, 71, 71); 
+}
+/*float: left    - makes block elements float next to each other
+  display: block - lets us specify padding (and height,width,margins,etc)
+  padding: 8px   - specify padding between each <a> element*/
+li{
+    float: left;
+    display: block;
+    padding: 8px;
+}
