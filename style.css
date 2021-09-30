@@ -19,7 +19,7 @@ h1{
     background-color:rgb(78, 77, 77);
     display: block;
     text-align: center;
-
+    padding: 14px 10px;
     text-decoration: none;
     float:left;
 }
