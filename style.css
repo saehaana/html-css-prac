@@ -1,14 +1,10 @@
 html,body{
     margin:0;
 }
-/*element selector uses just name*/
-h1{
-    font-family: Arial, Helvetica, sans-serif;  
-    color: rgb(224, 222, 222);
-}
-/*class selector uses .*/
-/*list-style-type: none - removes bullets
-  margin:0,padding:0    - removes browser default settings*/
+/*class selector uses .
+  list-style-type: none    - removes bullets
+  margin: 0, padding: 0    - removes browser default settings
+  overflow: hidden         - added to ul to prevent li elements from going outside the list*/
 .topNav{
     font-family: Arial, Helvetica, sans-serif;
     background-color:rgb(78, 77, 77); 
@@ -16,6 +12,28 @@ h1{
     margin: 0;
     padding: 0;
     overflow: hidden;
+}
+/*element selector uses just name*/
+h1{
+    font-family: Arial, Helvetica, sans-serif;  
+    color: rgb(255, 255, 255);
+}
+/*float: left - float li elements to create a horizontal layout, get block elements to float next to each other
+        *can also use display: inline to remove line breaks of li elements*/
+li{
+    float: left;
+}
+/* display: block     - allows us to specify padding (and height, width, margins, etc)
+   padding: 14px 16px - specify padding between each <a> element*/
+li a{
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* hover - does action when mouseover element*/
+li a:hover{
+    background-color:rgb(56, 56, 56);
 }
 /*id selector uses #*/
 #indexBackground{
