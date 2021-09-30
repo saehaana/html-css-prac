@@ -24,9 +24,9 @@ h1{
 }
 /*float: left - float li elements to create a horizontal layout, get block elements to float next to each other
         *can also use display: inline to remove line breaks of li elements*/
-li{
+/*li{
     float: right;
-}
+}*/
 /* display: block     - allows us to specify padding (and height, width, margins, etc)
    padding: 14px 16px - specify padding between each <a> element*/
 li a{
@@ -35,6 +35,7 @@ li a{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    float: right;
 }
 /* hover - does action when mouseover element*/
 li a:hover{
