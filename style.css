@@ -16,9 +16,10 @@ html,body{
 /*element selector uses just name*/
 h1{
     color: rgb(255, 255, 255);
+    background-color:rgb(78, 77, 77);
     display: block;
     text-align: center;
-    padding: 14px 16px;
+
     text-decoration: none;
     float:left;
 }
