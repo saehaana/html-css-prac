@@ -26,6 +26,7 @@ li{
 /* display: block     - allows us to specify padding (and height, width, margins, etc)
    padding: 14px 16px - specify padding between each <a> element*/
 li a{
+    color: rgb(255, 255, 255);
     display: block;
     text-align: center;
     padding: 14px 16px;
