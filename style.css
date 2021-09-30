@@ -17,9 +17,11 @@ html,body{
 h1{
     color: rgb(255, 255, 255);
     background-color:rgb(78, 77, 77);
+    list-style-type: none;
+    margin: 0;
+    padding: 14px 10px;
     display: block;
     text-align: center;
-    padding: 14px 10px;
     text-decoration: none;
     float:left;
 }
