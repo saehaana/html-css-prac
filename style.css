@@ -21,6 +21,7 @@ h1{
     background-color:rgb(78, 77, 77);
     list-style-type: none;
     display: block;
+    margin: 0;
     padding: 14px 16px;
     text-align: center;
     text-decoration: none;
