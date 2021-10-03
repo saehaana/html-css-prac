@@ -16,12 +16,12 @@ html,body{
 /*element selector uses just name*/
 h1{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
     color: rgb(255, 255, 255);
     background-color:rgb(78, 77, 77);
     list-style-type: none;
-    margin: 0;
-
     display: block;
+    padding: 14px 16px;
     text-align: center;
     text-decoration: none;
     float:left;
@@ -31,8 +31,12 @@ h1{
 /*li{
     float: right;
 }*/
-/* display: block     - allows us to specify padding (and height, width, margins, etc)
-   padding: 14px 16px - specify padding between each <a> element*/
+/* display: block           - allows us to specify padding (and height, width, margins, etc)
+   padding:                 - specify padding between each <a> element
+        if padding: Apx Bpx Cpx Dpx; top padding is A, right padding is B, bottom padding is C, left padding is D
+        if padding: Apx Bpx Cpx; top is A, right and left are B, bottom is C
+        if padding: Apx Bpx; top and bottom are A, left and right are B
+        if padding: Apx; all four paddings are A*/
 li a{
     color: rgb(255, 255, 255);
     display: block;
