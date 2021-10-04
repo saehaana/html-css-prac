@@ -53,9 +53,14 @@ li a:hover{
 }
 /*id selector uses #*/
 #indexBackground{
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     min-width: 100%;
     min-height: 100%;
+    position: relative;
 }
-
+#valorantMatchTracker{
+    top: 20px;
+    left: 20px;
+    position: absolute;
+}
