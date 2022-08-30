@@ -30,11 +30,11 @@ h1{
     float:left;
     overflow:hidden;
 }
-h1:link, h1:visited, h1:active{
+h1 a:link, h1 a:visited, h1 a:active{
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
-h1:hover{
+h1 a:hover{
     background-color:rgb(56, 56, 56);
     text-decoration: none;
 }
