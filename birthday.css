@@ -1,3 +1,7 @@
+.background{
+    position: relative;
+    text-align: center;
+}
 #birthdayBackground{
     position: relative;
     height: auto;
