@@ -8,6 +8,16 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+#birthdayBackground{
+    position: relative;
+    height: auto;
+    width: auto;
+    max-height: 100%;
+    max-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .top-right{
     position: absolute;
     font-family: Arial, Helvetica, sans-serif;
