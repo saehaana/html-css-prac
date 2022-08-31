@@ -10,7 +10,7 @@
     max-width: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: auto;
 }
 .happy-birthday-annie{
     position: absolute;
