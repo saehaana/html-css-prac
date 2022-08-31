@@ -1,5 +1,13 @@
-.top-right{
+.background{
     position: relative;
+    height: 100%;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.top-right{
+    position: absolute;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 5vw;
     font-weight: bold;
@@ -8,7 +16,7 @@
     right: 200px;
 }
 .middle-right{
-    position: relative;
+    position: absolute;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 5vw;
     font-weight: bold;
@@ -16,15 +24,6 @@
     text-align: center;
     top: 275px;
     right: 325px;
-}
-
-#birthdayBackground{
-    position: absolute;
-    height: 100%;
-    width: auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 
