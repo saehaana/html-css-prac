@@ -1,17 +1,7 @@
-.background{
-    position: relative;
-    height: auto;
-    width: auto;
-    max-height: 100%;
-    max-width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 #birthdayBackground{
     position: relative;
     height: auto;
-    width: auto;
+    width: 100%;
     max-height: 100%;
     max-width: 100%;
     background-position: center;
