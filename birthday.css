@@ -8,15 +8,21 @@ body, html{
 }
 .top-right{
     position: absolute;
-    font-size: 22px;
+    font-size: 5vw;
+    top: 200px;
+    right: 200px;
 }
 .middle-right{
     position: absolute;
-    font-size: 22px;
+    font-size: 5vw;
+    top: 150px;
+    right: 200px;
+    
 }
 
 #birthdayBackground{
-    height: 100%;
+    height: auto;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
