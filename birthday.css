@@ -2,6 +2,19 @@ body, html{
     height: 100%;
 }
 
+.background{
+    position: relative;
+    text-align: center;
+}
+.top-right{
+    position: absolute;
+    font-size: 22px;
+}
+.middle-right{
+    position: absolute;
+    font-size: 22px;
+}
+
 #birthdayBackground{
     height: 100%;
     background-position: center;
