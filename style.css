@@ -66,6 +66,7 @@ li a:hover{
 
 .parent{
     position: relative;
+    overflow-x: hidden;
 }
 
 /*id selector uses #*/
