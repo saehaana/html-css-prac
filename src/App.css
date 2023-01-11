@@ -1,9 +1,3 @@
-/*
-class selector uses '.'
-id selector uses '#'
-element selector uses just its name e.g. h1 for <h1> tags, p for <p> tags, etc
-*/
-
 html,body{
     margin: 0;
     overflow: hidden; /* hides scroll bars */
@@ -11,7 +5,7 @@ html,body{
 .main-container{
     position: relative;
 }
-#main-container-background{
+.main-container-background{
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -52,25 +46,4 @@ li a{
     padding-top: 15px;
     float: left;
     text-decoration: none;
-}
-.inner-container{
-    position: absolute; 
-    top: 0; /* At the bottom. Use top:0 to append it to the top */
-    background: rgb(0, 0, 0); /* Fallback color */
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-    color: #f1f1f1; /* Grey text */
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    padding: 20px; /* Some padding */
-}
-.welcome-message{
-    position: absolute; 
-    color: #f1f1f1; /* Grey text */
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    padding: 20px; /* Some padding */
-}
-#welcome{
-    position: absolute; 
-    border-color: red;
 }
