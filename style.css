@@ -1,44 +1,60 @@
+/*
+class selector uses '.'
+id selector uses '#'
+element selector uses just its name e.g. h1 for <h1> tags, p for <p> tags, etc
+*/
+
 html,body{
-    margin:0;
-}
-
-/*class selector uses .
-  list-style-type: none    - removes bullets
-  margin: 0, padding: 0    - removes browser default settings
-  overflow: hidden         - added to ul to prevent li elements from going outside the list*/
-.topNav{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color:rgb(78, 77, 77); 
-    list-style-type: none;
     margin: 0;
-    padding: 0;
-    overflow: auto;
+    overflow: hidden; /* hides scroll bars */
 }
-
-/*element selector uses just name*/
-h1{
+.main-container{
+    position: relative;
+}
+#main-container-background{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.name{
+    position: absolute;
+    top: 0px;
+    padding-top: 5px;
+    padding-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    
+}
+.title{
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    padding-top: 5px;
+    padding-left: 30px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
+    font-weight: lighter;
     color: rgb(255, 255, 255);
-    background-color:rgb(78, 77, 77);
-    display: block;
+}
+.navbar{
+    position: absolute;
+    top: 200px;
+    padding-left: 100px;
+    padding-top: 5px;
     margin: 0;
-    padding: 10px 12px;
-    text-decoration: none;
-    float:left;
+    list-style-type: none; /* removes bullet points */
 }
-h1 a:link, h1 a:visited, h1 a:active{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-}
-h1 a:hover{
-    background-color:rgb(56, 56, 56);
-}
-
-h2{
+li a{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: bold;
     color: rgb(255, 255, 255);
+    padding-top: 5px;
+    float: left;
+    text-decoration: none;
 }
 
 /*float: left - float li elements to create a horizontal layout, get block elements to float next to each other
@@ -52,34 +68,25 @@ h2{
         if padding: Apx Bpx Cpx; top is A, right and left are B, bottom is C
         if padding: Apx Bpx; top and bottom are A, left and right are B
         if padding: Apx; all four paddings are A*/
-li a{
-    color: rgb(255, 255, 255);
-    padding: 14px 16px;
-    text-decoration: none;
-    float: right;
-}
 
-/* hover - does action when mouseover element*/
-li a:hover{
-    background-color:rgb(56, 56, 56);
+.inner-container{
+    position: absolute; 
+    top: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 20px; /* Some padding */
 }
-
-.parent{
-    position: relative;
-    overflow-x: hidden;
+.welcome-message{
+    position: absolute; 
+    color: #f1f1f1; /* Grey text */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 20px; /* Some padding */
 }
-
-/*id selector uses #*/
-#indexBackground{
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-
-#valorantMatchTracker{
-    position: absolute;
-    top: 5px;
-    left: 5px; 
+#welcome{
+    position: absolute; 
+    border-color: red;
 }
