@@ -15,7 +15,6 @@ html,body{
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 .name{
@@ -42,9 +41,7 @@ html,body{
 .navbar{
     position: absolute;
     top: 200px;
-    padding-left: 100px;
-    padding-top: 5px;
-    margin: 0;
+    padding-left: 115px;
     list-style-type: none; /* removes bullet points */
 }
 li a{
@@ -52,23 +49,10 @@ li a{
     font-size: 18px;
     font-weight: bold;
     color: rgb(255, 255, 255);
-    padding-top: 5px;
+    padding-top: 15px;
     float: left;
     text-decoration: none;
 }
-
-/*float: left - float li elements to create a horizontal layout, get block elements to float next to each other
-        *can also use display: inline to remove line breaks of li elements*/
-/*li{
-    float: right;
-}*/
-/* display: block           - allows us to specify padding (and height, width, margins, etc)
-   padding:                 - specify padding between each <a> element
-        if padding: Apx Bpx Cpx Dpx; top padding is A, right padding is B, bottom padding is C, left padding is D
-        if padding: Apx Bpx Cpx; top is A, right and left are B, bottom is C
-        if padding: Apx Bpx; top and bottom are A, left and right are B
-        if padding: Apx; all four paddings are A*/
-
 .inner-container{
     position: absolute; 
     top: 0; /* At the bottom. Use top:0 to append it to the top */
