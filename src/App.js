@@ -1,9 +1,14 @@
 import React from 'react';
+
 import './App.css';
+import About from './components/About'
+import Projects from './components/Projects'
+
+import { SiLinkedin, SiGithub } from "react-icons/si";
 
 const App = () => {
     return (
-    <div className ="main-container">
+    <div className ="main-container" id="root">
         <div className = "main-container-background">
             <img src={"./assets/indexBackground.jpg"} alt="Page Background"/>
         </div>
@@ -20,7 +25,12 @@ const App = () => {
                 I'm a full-stack engineer from the Northern Virginia area. My desires are to innovate modern design and bring clean functionality. 
             </p>
         </div>
+        <div className = "github"> <SiGithub /> </div>
+        <div className = "linkedin"> <SiLinkedin /> </div>
+        <div className = "resume">Resume</div>
         
+        <About />
+        <Projects />    
     </div>
     );
 }

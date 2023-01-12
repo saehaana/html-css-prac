@@ -58,3 +58,30 @@ li a{
     padding: 10px;
     text-align: center;
 }
+.github{
+    position: absolute;
+    padding-top: 5px;
+    top: 1.5%;
+    right: 10%;
+    font-size: 50px;
+    color: white;
+}
+.linkedin{
+    position: absolute;
+    padding-top: 5px;
+    top: 1.5%;
+    right: 7%;
+    font-size: 50px;
+    color: white;
+}
+.resume{
+    position: absolute;
+    top: 1.8%;
+    right: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    border: 5px double white;
+}
