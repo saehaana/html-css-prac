@@ -4,7 +4,7 @@ Using GitHub for a free deployment of my personal website portfolio using GitHub
 
 Summary : 
 
-Initially I followed the step by step process for creating a GitHub Pages site [here](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site). The first deployment contained only HTML, CSS, JS and would briefly flash white when loading other html page content within the site. To fix this I had to make the swap over to the ReactJS framework to continuously load content within a single html page. Directions on how to deploy a website for free on GitHub can be found at [gitname/react-gh-pages](https://github.com/gitname/react-gh-pages).  
+Initially I followed the step by step process for creating a [GitHub Pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site). The first deployment contained only HTML, CSS, JS and would briefly flash white when loading other html page content within the site. To fix this I had to make the swap over to the ReactJS framework to continuously load content within a single html page. Directions on how to deploy a website for free on GitHub can be found at [gitname/react-gh-pages](https://github.com/gitname/react-gh-pages).  
 
 Build Instructions : 
 
