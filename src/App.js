@@ -14,6 +14,13 @@ const App = () => {
             <li><a href="https://saehaana.github.io/about.html">About</a></li>
             <li><a href="mailto:saehaana@gmail.com">Contact</a></li>
         </ul>
+        <div className = "message-box">
+            <p className = "message">
+                Welcome. <br></br> <br></br>
+                I'm a full-stack engineer from the Northern Virginia area. My desires are to innovate modern design and bring clean functionality. 
+            </p>
+        </div>
+        
     </div>
     );
 }

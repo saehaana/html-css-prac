@@ -47,3 +47,14 @@ li a{
     float: left;
     text-decoration: none;
 }
+.message{
+    position: absolute;
+    top: 65%;
+    left: 40%; 
+    font-family: Courier;
+    font-size: 22px;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+}
