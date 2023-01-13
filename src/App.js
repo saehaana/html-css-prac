@@ -1,6 +1,11 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
 
+import About from './components/About'
+import Projects from './components/Projects'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import PacmanLoader from "react-spinners/PacmanLoader";
 
 const App = () => {
@@ -35,6 +40,12 @@ const App = () => {
                 I'm a full-stack engineer from the Northern Virginia area. My desires are to innovate modern design and bring clean functionality. 
             </p>
         </div>
+        <div className = "github">  <FontAwesomeIcon inverse icon= {faGithub} /> </div>
+        <div className = "linkedin"> <FontAwesomeIcon inverse icon= {faLinkedin} /> </div>
+        <div className = "resume">Resume</div>
+        
+        <About />
+        <Projects />    
         </div>}
     </div>
     );
