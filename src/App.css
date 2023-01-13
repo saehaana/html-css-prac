@@ -62,9 +62,8 @@ li a{
     position: absolute;
     padding-top: 5px;
     top: 1.5%;
-    right: 10%;
+    right: 9.5%;
     font-size: 50px;
-    color: white;
 }
 .linkedin{
     position: absolute;
@@ -72,7 +71,6 @@ li a{
     top: 1.5%;
     right: 7%;
     font-size: 50px;
-    color: white;
 }
 .resume{
     position: absolute;
