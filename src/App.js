@@ -1,5 +1,4 @@
-import React from 'react';
-
+import React, {useState, useEffect} from 'react';
 import './App.css';
 
 import About from './components/About'
@@ -7,10 +6,24 @@ import Projects from './components/Projects'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import PacmanLoader from "react-spinners/PacmanLoader";
 
 const App = () => {
+    const [loading, setLoading] = useState(false);
+
+    useEffect(() => {
+        setLoading(true)
+        setTimeout(() => {
+            setLoading(false)
+        }, 3500)
+    }, [])
+
     return (
-    <div className ="main-container" id="root">
+    <div className ="main-container">
+        
+        { loading ? (<PacmanLoader size = {30} color = {"rgba(255, 255, 255, 1)"} loading={loading} />) 
+        :
+        <div className = "preloader">
         <div className = "main-container-background">
             <img src={"./assets/indexBackground.jpg"} alt="Page Background"/>
         </div>
@@ -33,6 +46,7 @@ const App = () => {
         
         <About />
         <Projects />    
+        </div>}
     </div>
     );
 }
