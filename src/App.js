@@ -1,9 +1,24 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './App.css';
 
+import PacmanLoader from "react-spinners/PacmanLoader";
+
 const App = () => {
+    const [loading, setLoading] = useState(false);
+
+    useEffect(() => {
+        setLoading(true)
+        setTimeout(() => {
+            setLoading(false)
+        }, 3500)
+    }, [])
+
     return (
     <div className ="main-container">
+        
+        { loading ? (<PacmanLoader size = {30} color = {"rgba(255, 255, 255, 1)"} loading={loading} />) 
+        :
+        <div className = "preloader">
         <div className = "main-container-background">
             <img src={"./assets/indexBackground.jpg"} alt="Page Background"/>
         </div>
@@ -20,7 +35,7 @@ const App = () => {
                 I'm a full-stack engineer from the Northern Virginia area. My desires are to innovate modern design and bring clean functionality. 
             </p>
         </div>
-        
+        </div>}
     </div>
     );
 }
