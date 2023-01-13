@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
 
+import{Link, Route, Routes} from 'react-router-dom'
+
 import About from './components/About'
 import Projects from './components/Projects'
 
@@ -15,7 +17,7 @@ const App = () => {
         setLoading(true)
         setTimeout(() => {
             setLoading(false)
-        }, 3500)
+        }, 2000)
     }, [])
 
     return (
@@ -40,12 +42,25 @@ const App = () => {
                 I'm a full-stack engineer from the Northern Virginia area. My desires are to innovate modern design and bring clean functionality. 
             </p>
         </div>
-        <div className = "github">  <FontAwesomeIcon inverse icon= {faGithub} /> </div>
-        <div className = "linkedin"> <FontAwesomeIcon inverse icon= {faLinkedin} /> </div>
-        <div className = "resume">Resume</div>
-        
-        <About />
-        <Projects />    
+        <div className = "github">  
+            <a href="https://github.com/saehaana" target="_blank" rel="noreferrer">
+                <FontAwesomeIcon inverse icon= {faGithub} />
+            </a>
+        </div>
+        <div className = "linkedin"> 
+        <a href="https://www.linkedin.com/in/saehaana/" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon inverse icon= {faLinkedin} />
+        </a>
+        </div>
+        <div className = "resume">
+            <a href="/Saehaan A. Resume.pdf" target="_blank">Resume</a>
+        </div>
+        {/* 
+        <Routes>
+            <Route path = "./components/About" element={<About />} />
+            <Route path = "./components/Projects" element={<Projects/>} />
+        </Routes>
+        */} 
         </div>}
     </div>
     );

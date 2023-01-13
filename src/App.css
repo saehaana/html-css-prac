@@ -11,7 +11,7 @@ html,body{
 }
 .main-container{
     text-align: center;
-    background-color: rgba(68,79,81,255);
+    background-color: rgb(39, 39, 39);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,4 +95,22 @@ li a{
     color: rgb(255, 255, 255);
     padding: 5px;
     border: 5px double white;
+}
+.resume a:link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+/* visited link */
+.resume a:visited {
+    color: white;
+    text-decoration: none;
+}
+/* mouse over link */
+.resume a:hover {
+    color: rgb(145, 0, 145);
+    background-color: rgb(0, 0, 0);
+}
+/* selected link */
+.resume a:active {
+    color: white;
 }
