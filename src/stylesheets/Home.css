@@ -1,3 +1,10 @@
+.home-container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    color:antiquewhite;
+}
 .name{
     position: absolute;
     top: 0px;

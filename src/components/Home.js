@@ -11,25 +11,29 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 const Home = () => {
     return ( 
     <>
-    <div className = "main-container-background">
-        <img src={"./assets/indexBackground.jpg"} alt="Page Background"/>
-    </div>
+    <div className= "home-container">
     <h1 className = "name">Ausawin Saehaan</h1>
     <p className = "title">Software Developer</p>
     <ul className = "navbar">
         <motion.li 
-            whileHover={{scale:1.1}}
-            whileTap={{scale:0.9}}>
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ ease: "easeOut", duration: 1, delay: .25}}
+        >
             <Link to="/Projects">Projects</Link>
         </motion.li>
         <motion.li 
-            whileHover={{scale:1.1}}
-            whileTap={{scale:0.9}}>
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 , delay: .5}}
+        >
             <Link to="/About" id="about">About</Link>
         </motion.li>
         <motion.li 
-            whileHover={{scale:1.1}}
-            whileTap={{scale:0.9}}>
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: .75}}
+        >
             <a href="mailto:saehaana@gmail.com">Contact</a>
         </motion.li>
     </ul>
@@ -43,6 +47,9 @@ const Home = () => {
         className = "github" 
         whileHover={{scale:1.1}}
         whileTap={{scale:0.9}} 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: .25}}
     >        
         <a href="https://github.com/saehaana" target="_blank" rel="noreferrer">
             <FontAwesomeIcon inverse icon= {faGithub} />
@@ -52,6 +59,9 @@ const Home = () => {
         className = "linkedin"
         whileHover={{scale:1.1}}
         whileTap={{scale:0.9}} 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: .5}}
     > 
     <a href="https://www.linkedin.com/in/saehaana/" target="_blank" rel="noreferrer">
         <FontAwesomeIcon inverse icon= {faLinkedin} />
@@ -61,9 +71,13 @@ const Home = () => {
         className = "resume"
         whileHover={{scale:1.1}}
         whileTap={{scale:0.9}} 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: .75}}
     > 
         <a href="/Saehaan A. Resume.pdf" target="_blank">Resume</a>
     </motion.div>
+    </div>
     </> 
     );
     

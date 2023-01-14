@@ -7,6 +7,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 
 import PacmanLoader from "react-spinners/PacmanLoader";
+import { motion } from "framer-motion";
 
 const App = () => {
     const [loading, setLoading] = useState(false);
@@ -25,12 +26,29 @@ const App = () => {
             (
             <>
             <PacmanLoader size = {30} color = {"rgba(255, 255, 255, 1)"} loading={loading} />
-            <h1 className = "preloader-title"> Ausawin Saehaan | Portfolio</h1> 
+            <motion.h1      
+                className = "preloader-title"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ ease: "easeOut", duration: 2}}>
+                Ausawin Saehaan
+            </motion.h1>
+            <h1 className = "preloader-linebreak">|</h1> 
+            <motion.h1 
+                className = "preloader-subtitle"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ ease: "easeOut", duration: 2, delay: 0.6}}>
+                Portfolio
+            </motion.h1> 
             </>
             ) 
         :
       
-        <div className = "main-container"> 
+        <motion.div 
+            className = "main-container" 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}> 
         { 
         <Routes>
         <Route path = "/" element={<Home/>}/> 
@@ -38,7 +56,7 @@ const App = () => {
         <Route path = "/Projects" element={<Projects/>} />
         </Routes>
         } 
-        </div>
+        </motion.div>
     }
     </div>
     </>
