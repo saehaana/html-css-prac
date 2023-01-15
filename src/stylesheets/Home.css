@@ -2,49 +2,66 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-repeat: no-repeat;
-    color:antiquewhite;
+}
+.navbox{
+    position:absolute;
+    height: 100vh;
+    width: 320px;
+    top:0px;
+    border-right: thick double #000000;
 }
 .name{
     position: absolute;
+    width: 320px;
     top: 0px;
     padding-top: 5px;
-    padding-left: 30px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
-    color: rgb(255, 255, 255);
-    
+    color: rgb(255, 255, 255); 
 }
 .title{
     position: absolute;
+    width: 320px;
     top: 40px;
-    left: 30px;
     padding-top: 5px;
-    padding-left: 30px;
+    padding-bottom: 15px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
     font-weight: lighter;
     color: rgb(255, 255, 255);
+    border-bottom: thick double #000000;
 }
-.navbar{
+.navlist{
     position: absolute;
-    top: 200px;
-    padding-left: 115px;
+    width:320px;
+    top: 150px;
+    padding-left: 0;
     list-style-type: none; /* removes bullet points */
 }
-li a{
+.navlist a{
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: block;
+    text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 30px;
     font-weight: bold;
     color: rgb(255, 255, 255);
-    padding-top: 15px;
-    float: left;
-    text-decoration: none;
+    border-top: solid #000000;
+    border-bottom: solid #000000;
+
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.navlist a:hover {
+    box-shadow: inset 320px 0 0 0 #54b3d6;
+    color: white;
 }
 .message{
     position: absolute;
-    top: 65%;
-    left: 40%; 
+    bottom: 10%;
+    right: 10%; 
     font-family: Courier;
     font-size: 22px;
     font-weight: lighter;
