@@ -3,6 +3,28 @@
     width: 100vw;
     height: 100vh;
 }
+.switch{
+    position:absolute;
+    top:9.5%;
+    left: 39%;
+    width: 35px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+}
+.switch[data-isOn="true"]{
+    justify-content: flex-end;
+}
+.handle{
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 40px;
+}
 .navbox{
     position:absolute;
     height: 100vh;
@@ -58,36 +80,38 @@
     box-shadow: inset 320px 0 0 0 #54b3d6;
     color: white;
 }
-.message{
+.iconlist{
     position: absolute;
+    border: 2px solid red;
+    width:320px;
+    height: 10vh;
     bottom: 10%;
-    right: 10%; 
+    padding-left: 0;
+    list-style-type: none;
+}
+.iconlist li{
+
+}
+.message-box{
+    position: absolute;
+    top:40%;
+    left:40%;
+    width:30%;
+    height:20%;
+}
+.message{
+    position:absolute;
     font-family: Courier;
     font-size: 22px;
     font-weight: lighter;
     color: rgb(255, 255, 255);
-    padding: 10px;
-    text-align: center;
-}
-.github{
-    position: absolute;
-    padding-top: 5px;
-    top: 1.5%;
-    right: 9.5%;
-    font-size: 50px;
-}
-.linkedin{
-    position: absolute;
-    padding-top: 5px;
-    top: 1.5%;
-    right: 7%;
-    font-size: 50px;
+    text-align: left;
 }
 .resume{
     position: absolute;
-    top: 1.8%;
-    right: 1%;
-    font-family: Arial, Helvetica, sans-serif;
+    bottom:0;
+    left:0;
+    font-family: Courier;
     font-size: 30px;
     font-weight: lighter;
     color: rgb(255, 255, 255);
