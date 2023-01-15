@@ -3,25 +3,41 @@
     width: 100vw;
     height: 100vh;
 }
+.switch-container{
+    position: absolute;
+    width: 8%;
+    height: 5%;
+    top:0;
+    right:0;
+}
+.switch-text{
+    position: absolute;
+    top:0;
+    left:15%;
+    padding:0;
+    margin:5.5%;
+    color: white;
+}
 .switch{
     position:absolute;
-    top:9.5%;
-    left: 39%;
+    top: 0;
+    right: 0;
     width: 35px;
     height: 10px;
     background-color: rgba(255, 255, 255, 0.4);
     display: flex;
     justify-content: flex-start;
     border-radius: 50px;
-    padding: 10px;
+    padding: 5px;
+    margin:10px;
     cursor: pointer;
 }
 .switch[data-isOn="true"]{
     justify-content: flex-end;
 }
 .handle{
-    width: 15px;
-    height: 15px;
+    width: 11px;
+    height: 11px;
     background-color: white;
     border-radius: 40px;
 }
@@ -51,12 +67,11 @@
     font-size: 22px;
     font-weight: lighter;
     color: rgb(255, 255, 255);
-    border-bottom: thick double #000000;
 }
 .navlist{
     position: absolute;
     width:320px;
-    top: 150px;
+    top: 20%;
     padding-left: 0;
     list-style-type: none; /* removes bullet points */
 }
@@ -82,15 +97,15 @@
 }
 .iconlist{
     position: absolute;
-    border: 2px solid red;
     width:320px;
-    height: 10vh;
-    bottom: 10%;
+    height:5vh;
+    bottom: 0;
     padding-left: 0;
     list-style-type: none;
 }
 .iconlist li{
-
+    display: inline;
+    padding: 5%;
 }
 .message-box{
     position: absolute;
