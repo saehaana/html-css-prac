@@ -26,21 +26,23 @@ const App = () => {
             (
             <>
             <PacmanLoader size = {30} color = {"rgba(255, 255, 255, 1)"} loading={loading} />
-            <motion.h1      
-                className = "preloader-title"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ ease: "easeOut", duration: 2}}>
-                Ausawin Saehaan
-            </motion.h1>
-            <h1 className = "preloader-linebreak">|</h1> 
-            <motion.h1 
-                className = "preloader-subtitle"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ ease: "easeOut", duration: 2, delay: 0.6}}>
-                Portfolio
-            </motion.h1> 
+            <div className = "text-container">
+                <motion.h1      
+                    className = "preloader-title"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1, delay: 0.5}}>
+                    Portfolio
+                </motion.h1>
+                <h1 className = "preloader-linebreak">||</h1> 
+                <motion.h1 
+                    className = "preloader-subtitle"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1, delay: 1}}>
+                    Ausawin Saehaan
+                </motion.h1>
+            </div>
             </>
             ) 
         :
