@@ -3,111 +3,6 @@
     width: 100vw;
     height: 100vh;
 }
-.switch-container{
-    position: absolute;
-    width: 8%;
-    height: 5%;
-    top:0;
-    right:0;
-}
-.switch-text{
-    position: absolute;
-    top:0;
-    left:0;
-    padding:0;
-    margin:5.5%;
-    font-family: Courier;
-    color: white;
-}
-.switch{
-    position:absolute;
-    top: 0;
-    right: 0;
-    width: 35px;
-    height: 10px;
-    background-color: rgba(255, 255, 255, 0.4);
-    display: flex;
-    justify-content: flex-start;
-    border-radius: 50px;
-    padding: 5px;
-    margin:10px;
-    cursor: pointer;
-}
-.switch[data-isOn="true"]{
-    justify-content: flex-end;
-}
-.handle{
-    width: 11px;
-    height: 11px;
-    background-color: white;
-    border-radius: 40px;
-}
-.navbox{
-    position:absolute;
-    height: 100vh;
-    width: 320px;
-    top:0px;
-    border-right: thick double #000000;
-}
-.name{
-    position: absolute;
-    width: 320px;
-    top: 0px;
-    padding-top: 5px;
-    font-family: Courier;
-    font-size: 30px;
-    color: rgb(255, 255, 255); 
-}
-.title{
-    position: absolute;
-    width: 320px;
-    top: 40px;
-    padding-top: 5px;
-    padding-bottom: 15px;
-    font-family: Courier;
-    font-size: 22px;
-    font-weight: lighter;
-    color: rgb(255, 255, 255);
-}
-.navlist{
-    position: absolute;
-    width:320px;
-    top: 20%;
-    padding-left: 0;
-    list-style-type: none; /* removes bullet points */
-}
-.navlist a{
-    position: relative;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    display: block;
-    text-decoration: none;
-    font-family: Courier;
-    font-size: 30px;
-    font-weight: bold;
-    color: rgb(255, 255, 255);
-    border-top: solid #000000;
-    border-bottom: solid #000000;
-
-    box-shadow: inset 0 0 0 0 #54b3d6;
-    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-}
-.navlist a:hover {
-    box-shadow: inset 320px 0 0 0 #54b3d6;
-    color: white;
-}
-.iconlist{
-    position: absolute;
-    width:320px;
-    height:5vh;
-    bottom: 0;
-    padding-left: 0;
-    list-style-type: none;
-}
-.iconlist li{
-    display: inline;
-    padding: 5%;
-}
 .message-box{
     position: absolute;
     top:40%;
@@ -134,12 +29,8 @@
     padding: 5px;
     border: 5px double white;
 }
-.resume a:link {
+.resume a:link, a:visited {
     color: rgb(255, 255, 255);
-    text-decoration: none;
-}
-.resume a:visited {
-    color: white;
     text-decoration: none;
 }
 .resume a:hover {
