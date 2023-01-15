@@ -39,7 +39,13 @@ const App = () => {
                     transition={{ duration: 1, delay: 0.5}}>
                     Portfolio
                 </motion.h1>
-                <h1 className = "preloader-linebreak">||</h1> 
+                <motion.h1 
+                    className = "preloader-linebreak"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1}}>
+                    ||
+                </motion.h1> 
                 <motion.h1 
                     className = "preloader-subtitle"
                     initial={{ opacity: 0 }}
@@ -115,7 +121,7 @@ const App = () => {
         
         { 
         <Routes>
-        <Route path = "/" element={<Home/>}/> 
+        <Route path = "/" element={<Home/>} /> 
         <Route path = "/About" element={<About/>} />
         <Route path = "/Projects" element={<Projects/>} />
         </Routes>
