@@ -26,6 +26,7 @@ const App = () => {
 
     return (
     <>
+    <div className='parallax'></div>
     <div className = "preloader">
     { loading ? 
             (
@@ -57,10 +58,14 @@ const App = () => {
             </>
             ) 
         :
+        <>
+        
         <div className="main-container">
-        <div className="navbox">
-            <h1 className = "name">Ausawin Saehaan</h1>
-            <p className = "title">Software Developer</p>
+        <div className="navbox"> 
+            <Link to="/" className='homeLink'>
+                <h1 className='name'>Ausawin Saehaan</h1> 
+                <p className='title'>Software Developer</p>
+            </Link>
             <ul className = "navlist">
                 <motion.li 
                     initial={{ opacity: 0 }}
@@ -118,7 +123,7 @@ const App = () => {
                     <motion.div className="handle" layout transition={spring} />
             </div>
         </motion.div>
-        
+        </div> 
         { 
         <Routes>
         <Route path = "/" element={<Home/>} /> 
@@ -126,12 +131,14 @@ const App = () => {
         <Route path = "/Projects" element={<Projects/>} />
         </Routes>
         } 
-        </div> 
         
+        </>
     }  
     </div>
+    <div class="parallax"></div>
     </>
     );
+
 }
 const spring = {
     type: "spring",

@@ -1,6 +1,6 @@
 html,body{
     margin: 0;
-    overflow: hidden; /* hides scroll bars */
+    height: 100%;
 }
 .preloader{
     position:relative;
@@ -39,10 +39,32 @@ html,body{
     padding-left: 5%;
     left:45.5%;
 }
+.parallax{
+    background-image: url("/public/assets/indexBackground.jpg");
+    height:100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
 .main-container{
-    position: relative;
+    height:100%;
     width: 100vw;
-    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.homeLink{
+    position: absolute;
+    width: 320px;
+    top: 0;
+    left:0;
+    padding-top: 5px;
+    font-family: Courier;
+    font-size: 18px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255); 
+    text-decoration: none;
 }
 .navbox{
     position:absolute;
