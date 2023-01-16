@@ -26,13 +26,12 @@ const App = () => {
 
     return (
     <>
-    <div className='parallax'></div>
     <div className = "preloader">
     { loading ? 
             (
             <>
             <PacmanLoader size = {30} color = {"rgba(255, 255, 255, 1)"} loading={loading} />
-            <div className = "text-container">
+            <div className = "pretext-container">
                 <motion.h1      
                     className = "preloader-title"
                     initial={{ opacity: 0 }}
@@ -61,35 +60,34 @@ const App = () => {
         <>
         
         <div className="main-container">
-        <div className="navbox"> 
-            <Link to="/" className='homeLink'>
-                <h1 className='name'>Ausawin Saehaan</h1> 
-                <p className='title'>Software Developer</p>
-            </Link>
-            <ul className = "navlist">
-                <motion.li 
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 1, delay: .25}}
-                >
-                    <Link to="/Projects">Projects</Link>
-                </motion.li>
-                <motion.li 
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 1 , delay: .5}}
-                >
-                    <Link to="/About" id="about">About</Link>
-                </motion.li>
-                <motion.li 
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 1, delay: .75}}
-                >
-                    <a href="mailto:saehaana@gmail.com">Contact</a>
-                </motion.li>
-            </ul>
-        </div>
+        <Link to="/">
+            <h1 className='name'>Ausawin Saehaan</h1> 
+            <p className='title'>Software Developer</p>
+        </Link>
+        <ul className = "navbar">
+            <motion.li className="nav-projects"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, delay: .25}}
+            >
+                <Link to="/Projects">Projects</Link>
+            </motion.li>
+            <motion.li className='nav-about'
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1 , delay: .5}}
+            >
+                <Link to="/About" id="about">About</Link>
+            </motion.li>
+            <motion.li className='nav-contact'
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, delay: .75}}
+            >
+                <a href="mailto:saehaana@gmail.com">Contact</a>
+            </motion.li>
+        </ul>
+        
         <ul className = "iconlist">
             <motion.li
                 className = "github" 
@@ -112,6 +110,7 @@ const App = () => {
             </a>
             </motion.li>
         </ul>
+
         <motion.div 
             className="switch-container"
             initial={{ opacity: 0 }}
@@ -123,6 +122,7 @@ const App = () => {
                     <motion.div className="handle" layout transition={spring} />
             </div>
         </motion.div>
+
         </div> 
         { 
         <Routes>
@@ -131,11 +131,9 @@ const App = () => {
         <Route path = "/Projects" element={<Projects/>} />
         </Routes>
         } 
-        
         </>
     }  
     </div>
-    <div class="parallax"></div>
     </>
     );
 
