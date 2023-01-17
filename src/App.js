@@ -8,9 +8,6 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 
 import PacmanLoader from "react-spinners/PacmanLoader";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-
 import { motion } from "framer-motion";
 
 const App = () => {
@@ -89,29 +86,6 @@ const App = () => {
             </motion.li>
         </ul>
         
-        <ul className = "iconlist">
-            <motion.li
-                className = "github" 
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1, delay: .75}}
-            >        
-                <a href="https://github.com/saehaana" target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon inverse icon= {faGithub} size="3x"/>
-                </a>
-            </motion.li>
-            <motion.li 
-                className = "linkedin"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1, delay: .75}}
-            > 
-            <a href="https://www.linkedin.com/in/saehaana/" target="_blank" rel="noreferrer">
-                <FontAwesomeIcon inverse icon= {faLinkedin} size="3x"/>
-            </a>
-            </motion.li>
-        </ul>
-
         <motion.div 
             className="switch-container"
             initial={{ opacity: 0 }}
