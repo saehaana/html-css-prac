@@ -6,9 +6,9 @@ html,body{
     margin: 0;
     height: 100%;
     overflow: hidden; /* hides scroll bars */
+    background-color: rgb(58, 68, 75);
 }
 .preloader{
-    width: 100vw;
     height: 100vh;
     background-color: rgb(58, 68, 75);
 
@@ -23,11 +23,6 @@ html,body{
 .pretext-container{
     position:absolute;
     bottom:20%;
-    text-align: center;
-}
-.home-container{
-    height:100%;
-    width: 100vw;
     text-align: center;
 }
 .name{
@@ -50,30 +45,6 @@ html,body{
     font-size: 1.3rem;
     font-weight: lighter;
     color: rgb(255, 255, 255);
-}
-.navbar{
-    width: 45%;
-    list-style-type: none; /* removes bullet points */
-    margin: 0 auto;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(43, 51, 56);
-    border-radius:50px;
-}
-.navbar li{
-    float: left; /* floats list elements next to each other */
-    width:33.33%;
-}
-.navbar a{
-    display: block;
-    text-align: center;
-    text-decoration: none; /* removes underline */
-    font-family: Courier;
-    color: white;
-    padding: 0.875rem 1rem;
-}
-.navbar a:hover {
-    background-color: #111;
 }
 .switch-container{
     position: absolute;

@@ -1,19 +1,22 @@
 import React, {useState, useEffect} from 'react';
-import './stylesheets/App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import{Link, NavLink, Route, Routes} from 'react-router-dom'
 
-import{Link, Route, Routes} from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './stylesheets/App.css';
+
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+
 import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 
-import PacmanLoader from "react-spinners/PacmanLoader";
 import { motion } from "framer-motion";
-
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import PacmanLoader from "react-spinners/PacmanLoader";
 
 const App = () => {
     const [loading, setLoading] = useState(false);
@@ -29,10 +32,11 @@ const App = () => {
 
     return (
     <>
-    <Container fluid className = "preloader">
+    
     { loading ? 
             (
             <>
+            <Container fluid className = "preloader">
             <Row className="pacman">
                 <Col>
                 <PacmanLoader size = {30} color = {"rgba(255, 255, 255, 1)"} loading={loading} />
@@ -67,52 +71,86 @@ const App = () => {
                 </motion.h1>
                 </Col>
             </Row>
+            </Container>
             </>
             ) 
         :
         <>
-        <div className="home-container">
-        <Link to="/">
-            <h1 className='name'>Ausawin Saehaan</h1> 
-            <p className='title'>Software Developer</p>
-        </Link>
-        <ul className = "navbar">
-            <motion.li className="nav-projects"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1, delay: .25}}
-            >
-                <Link to="/Projects">Projects</Link>
-            </motion.li>
-            <motion.li className='nav-about'
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1 , delay: .5}}
-            >
-                <Link to="/About">About</Link>
-            </motion.li>
-            <motion.li className='nav-contact'
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1, delay: .75}}
-            >
-                <Link to="/Contact">Contact</Link>
-            </motion.li>
-        </ul>
-        
-        <motion.div 
-            className="switch-container"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{duration: 1, delay: 1.25}}
-        >
-            <p className="switch-text">Dark | Light</p>
-            <div className="switch" data-isOn={isOn} onClick={toggleSwitch}>
-                    <motion.div className="handle" layout transition={spring} />
-            </div>
-        </motion.div>
-
-        </div> 
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <Container>
+                <Navbar.Brand as={Link} to='/'>Ausawin Saehaan</Navbar.Brand>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="me-auto">
+                        <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1, delay: .25}}>
+                        <Nav.Link as={NavLink} to='/Projects'>Projects</Nav.Link>
+                        </motion.div>
+                        <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1, delay: .5}}>
+                        <Nav.Link as={NavLink} to='/About'>About</Nav.Link>
+                        </motion.div>
+                        <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1, delay: .75}}>
+                        <Nav.Link as={NavLink} to='/Contact'>Contact</Nav.Link>
+                        </motion.div>
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
+        {/* 
+        <div className='home-container'>
+        <Row >
+            <Link to="/">
+                <h1 className='name'>Ausawin Saehaan</h1> 
+                <p className='title'>Software Developer</p>
+            </Link>
+            <Col md={6} className='mid-col'>
+                <ul className = "navbar">
+                    <motion.li className="nav-projects"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1, delay: .25}}
+                    >
+                        <Link to="/Projects">Projects</Link>
+                    </motion.li>
+                    <motion.li className='nav-about'
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1 , delay: .5}}
+                    >
+                        <Link to="/About">About</Link>
+                    </motion.li>
+                    <motion.li className='nav-contact'
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1, delay: .75}}
+                    >
+                        <Link to="/Contact">Contact</Link>
+                    </motion.li>
+                </ul>
+            </Col>
+            <Col >
+                <motion.div 
+                    className="switch-container"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{duration: 1, delay: 1.25}}
+                >
+                    <p className="switch-text">Dark | Light</p>
+                    <div className="switch" data-isOn={isOn} onClick={toggleSwitch}>
+                            <motion.div className="handle" layout transition={spring} />
+                    </div>
+                </motion.div>
+            </Col>
+        </Row>
+        </div>*/}
         { 
         <Routes>
         <Route path = "/" element={<Home/>} /> 
@@ -123,7 +161,7 @@ const App = () => {
         } 
         </>
     }  
-    </Container>
+    
     </>
     );
 
