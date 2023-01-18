@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './stylesheets/App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import{Link, Route, Routes} from 'react-router-dom'
 import Home from './components/Home';
@@ -9,6 +10,10 @@ import Contact from './components/Contact';
 
 import PacmanLoader from "react-spinners/PacmanLoader";
 import { motion } from "framer-motion";
+
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const App = () => {
     const [loading, setLoading] = useState(false);
@@ -24,12 +29,17 @@ const App = () => {
 
     return (
     <>
-    <div className = "preloader">
+    <Container fluid className = "preloader">
     { loading ? 
             (
             <>
-            <PacmanLoader size = {30} color = {"rgba(255, 255, 255, 1)"} loading={loading} />
-            <div className = "pretext-container">
+            <Row className="pacman">
+                <Col>
+                <PacmanLoader size = {30} color = {"rgba(255, 255, 255, 1)"} loading={loading} />
+                </Col>
+            </Row>
+            <Row className = "pretext-container">
+                <Col xs={5}>
                 <motion.h1      
                     className = "preloader-title"
                     initial={{ opacity: 0 }}
@@ -37,6 +47,8 @@ const App = () => {
                     transition={{ duration: 1, delay: 0.5}}>
                     Portfolio
                 </motion.h1>
+                </Col>
+                <Col xs={2}>
                 <motion.h1 
                     className = "preloader-linebreak"
                     initial={{ opacity: 0 }}
@@ -44,6 +56,8 @@ const App = () => {
                     transition={{ duration: 1}}>
                     ||
                 </motion.h1> 
+                </Col>
+                <Col xs={5}>
                 <motion.h1 
                     className = "preloader-subtitle"
                     initial={{ opacity: 0 }}
@@ -51,13 +65,13 @@ const App = () => {
                     transition={{ duration: 1, delay: 1}}>
                     Ausawin Saehaan
                 </motion.h1>
-            </div>
+                </Col>
+            </Row>
             </>
             ) 
         :
         <>
-        
-        <div className="main-container">
+        <div className="home-container">
         <Link to="/">
             <h1 className='name'>Ausawin Saehaan</h1> 
             <p className='title'>Software Developer</p>
@@ -109,7 +123,7 @@ const App = () => {
         } 
         </>
     }  
-    </div>
+    </Container>
     </>
     );
 
