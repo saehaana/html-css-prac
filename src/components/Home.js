@@ -36,24 +36,7 @@ const Home = () => {
                 </motion.div>   
             </Col>
         </Row>
-
-        <Row className='resume-box-row'>
-            
-            <Col xs={1} className="resume-icon-box">
-            <motion.a 
-                href="/Saehaan A. Resume.pdf" 
-                target="_blank"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1, delay: 1.5}}
-            >
-                <motion.div whileHover={{ scale: 1.2}} className='download'>
-                    <FontAwesomeIcon icon={faDownload} size="2x"/>
-                </motion.div>
-                </motion.a>
-            </Col>
-        </Row>
-
+        
         <Row className='mouse-row'>
             <Col xs={12} className="mouse-icon-box">
                 <div className='mouse'>

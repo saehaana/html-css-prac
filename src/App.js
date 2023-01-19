@@ -102,7 +102,7 @@ const App = () => {
                         </motion.div>
                     </Nav>
                     <Nav>
-                        <Nav.Link href="#deets">Temp</Nav.Link>
+                        <Nav.Link href="#deets">Resume</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
