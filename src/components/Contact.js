@@ -1,4 +1,9 @@
 import React from 'react'
+import '../stylesheets/Contact.css'
+
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -7,7 +12,12 @@ import { motion } from "framer-motion";
 function Contact(){
     return (
         <>
-        <h1>Contact Me</h1>
+        <Container id='Contact'>
+            <Row>
+                <Col>
+                    <h1>Contact</h1>
+                </Col>
+            </Row>
         <div className='footer'> 
         <a href="mailto:saehaana@gmail.com">Contact</a>
         <ul className = "iconlist">
@@ -33,6 +43,8 @@ function Contact(){
             </motion.li>
         </ul>
         </div>
+
+        </Container>
         </>
     )
 }

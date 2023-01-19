@@ -4,7 +4,7 @@
 }
 .message-box-row{
     position: relative;
-    top: 30%;
+    top: 15%;
     display: flex;
     justify-content: center;
     text-align: left;
@@ -27,6 +27,13 @@
     position: relative;
     left: 25%;
 }
+.mouse-row{
+    position: relative;
+    top: 25%;
+}
+#arrow-down{
+    --fa-animation-duration: 3s;
+}
 .resume-box-row{
     position: relative;
     top: 35%;
@@ -41,11 +48,4 @@
     height:45%;
     width: 80%;
     font-size: 1.5rem;
-}
-.mouse-row{
-    position: relative;
-    top: 40%;
-}
-#arrow-down{
-    --fa-animation-duration: 3s;
 }

@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import{Link, NavLink, Route, Routes} from 'react-router-dom'
+import{Link, Route, Routes} from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './stylesheets/App.css';
@@ -20,9 +21,7 @@ import PacmanLoader from "react-spinners/PacmanLoader";
 
 const App = () => {
     const [loading, setLoading] = useState(false);
-    const [isOn, setIsOn] = useState(false);
-    const toggleSwitch = () => setIsOn(!isOn);
-
+    
     useEffect(() => {
         setLoading(true)
         setTimeout(() => {
@@ -32,7 +31,6 @@ const App = () => {
 
     return (
     <>
-    
     { loading ? 
             (
             <>
@@ -78,7 +76,8 @@ const App = () => {
         <>
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
-                <Navbar.Brand as={Link} to='/'>Ausawin Saehaan</Navbar.Brand>
+                <Navbar.Brand as={Link} to ='/'>
+                Ausawin Saehaan</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
@@ -86,19 +85,19 @@ const App = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1, delay: .25}}>
-                            <Nav.Link as={NavLink} to='/Projects'>Projects</Nav.Link>
+                        <Nav.Link as={HashLink} smooth to='#Projects'>Projects</Nav.Link>
                         </motion.div>
                         <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1, delay: .5}}>
-                            <Nav.Link as={NavLink} to='/About'>About</Nav.Link>
+                            <Nav.Link as={HashLink} smooth to='#About'>About</Nav.Link>
                         </motion.div>
                         <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1, delay: .75}}>
-                            <Nav.Link as={NavLink} to='/Contact'>Contact</Nav.Link>
+                            <Nav.Link as={HashLink} smooth to='#Contact'>Contact</Nav.Link>
                         </motion.div>
                     </Nav>
                     <Nav>
@@ -121,10 +120,5 @@ const App = () => {
     );
 
 }
-const spring = {
-    type: "spring",
-    stiffness: 700,
-    damping: 30
-  };
 
 export default App

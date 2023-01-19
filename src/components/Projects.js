@@ -1,9 +1,21 @@
 import React from 'react'
+import '../stylesheets/Projects.css'
+
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 function Projects(){
     return (
         <>
-        <h1>Project</h1>
+        <Container id='Projects'>
+            <Row>
+                <Col>
+                    <h1>Project</h1>
+                </Col>
+            </Row>
+
+        </Container>
         </>
     )
 }

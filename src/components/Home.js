@@ -1,14 +1,18 @@
 import React from 'react';
-import{ Link } from 'react-router-dom'
+import{Link} from 'react-router-dom'
 import '../stylesheets/Home.css';
 import{ motion } from "framer-motion"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowDown, faDownload, faMouse } from '@fortawesome/free-solid-svg-icons';
+import { faArrowDown, faMouse } from '@fortawesome/free-solid-svg-icons';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
+
+import About from './About';
+import Projects from './Projects';
+import Contact from './Contact';
 
 const Home = () => {
     return ( 
@@ -36,7 +40,7 @@ const Home = () => {
                 </motion.div>   
             </Col>
         </Row>
-        
+
         <Row className='mouse-row'>
             <Col xs={12} className="mouse-icon-box">
                 <div className='mouse'>
@@ -51,7 +55,11 @@ const Home = () => {
             </Col>
         </Row>
     </Container>
-    </> 
+
+    <Projects/>
+    <About/>
+    <Contact/>
+    </>
     );
 }
 
