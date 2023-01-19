@@ -11,6 +11,7 @@
     top: 30%;
     display: flex;
     justify-content: center;
+    text-align: left;
 }
 .message-box{
     position: relative;
@@ -18,6 +19,10 @@
 }
 .message{
     font-size: 1.5rem;
+}
+.contact-box{
+    position: relative;
+    left: 25%;
 }
 .resume-box-row{
     position: relative;

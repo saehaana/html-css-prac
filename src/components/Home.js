@@ -15,7 +15,7 @@ const Home = () => {
     <>
     <Container className='home-container'>
         <Row className='message-box-row'>
-            <Col className="message-box">
+            <Col xs={12} className="message-box">
                 <motion.p 
                 className = "message" 
                 initial={{ opacity: 0 }}
@@ -26,12 +26,8 @@ const Home = () => {
                 I'm a full-stack engineer from the Northern Virginia area. My desires are to innovate modern design and bring clean functionality. 
                 </motion.p>
             </Col>
-        </Row>
-
-        <Row className='resume-box-row'>
-            <Col xs={11} className='resume-box'>
-                <motion.div 
-                className = "resume"
+            <Col xs={12} className="contact-box">
+                <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 1.5}}
@@ -39,6 +35,10 @@ const Home = () => {
                 <Button variant="primary" as={Link} to='/Contact'>Contact Me</Button>{''}
                 </motion.div>   
             </Col>
+        </Row>
+
+        <Row className='resume-box-row'>
+            
             <Col xs={1} className="resume-icon-box">
             <motion.a 
                 href="/Saehaan A. Resume.pdf" 
