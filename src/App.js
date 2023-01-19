@@ -86,71 +86,27 @@ const App = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1, delay: .25}}>
-                        <Nav.Link as={NavLink} to='/Projects'>Projects</Nav.Link>
+                            <Nav.Link as={NavLink} to='/Projects'>Projects</Nav.Link>
                         </motion.div>
                         <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1, delay: .5}}>
-                        <Nav.Link as={NavLink} to='/About'>About</Nav.Link>
+                            <Nav.Link as={NavLink} to='/About'>About</Nav.Link>
                         </motion.div>
                         <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1, delay: .75}}>
-                        <Nav.Link as={NavLink} to='/Contact'>Contact</Nav.Link>
+                            <Nav.Link as={NavLink} to='/Contact'>Contact</Nav.Link>
                         </motion.div>
+                    </Nav>
+                    <Nav>
+                        <Nav.Link href="#deets">Temp</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
         </Navbar>
-        {/* 
-        <div className='home-container'>
-        <Row >
-            <Link to="/">
-                <h1 className='name'>Ausawin Saehaan</h1> 
-                <p className='title'>Software Developer</p>
-            </Link>
-            <Col md={6} className='mid-col'>
-                <ul className = "navbar">
-                    <motion.li className="nav-projects"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 1, delay: .25}}
-                    >
-                        <Link to="/Projects">Projects</Link>
-                    </motion.li>
-                    <motion.li className='nav-about'
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 1 , delay: .5}}
-                    >
-                        <Link to="/About">About</Link>
-                    </motion.li>
-                    <motion.li className='nav-contact'
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 1, delay: .75}}
-                    >
-                        <Link to="/Contact">Contact</Link>
-                    </motion.li>
-                </ul>
-            </Col>
-            <Col >
-                <motion.div 
-                    className="switch-container"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{duration: 1, delay: 1.25}}
-                >
-                    <p className="switch-text">Dark | Light</p>
-                    <div className="switch" data-isOn={isOn} onClick={toggleSwitch}>
-                            <motion.div className="handle" layout transition={spring} />
-                    </div>
-                </motion.div>
-            </Col>
-        </Row>
-        </div>*/}
         { 
         <Routes>
         <Route path = "/" element={<Home/>} /> 
@@ -161,7 +117,6 @@ const App = () => {
         } 
         </>
     }  
-    
     </>
     );
 

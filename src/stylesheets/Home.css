@@ -2,6 +2,10 @@
     height:100vh;
     text-align: center;
 }
+.mouse{
+    position: relative;
+    top: 50%;
+}
 .message-box-row{
     position: relative;
     top: 30%;
@@ -18,16 +22,21 @@
 .resume-box-row{
     position: relative;
     top: 35%;
-    display: flex;
-    justify-content: center;
+    left:25%;
+    height:10%;
 }
 .resume-box{
     position: relative;
-    width: 50%;
+    width: 25%;
 }
 .resume{
+    height:45%;
+    width: 80%;
     font-size: 1.5rem;
-    border: 5px double white;
+}
+.mouse-row{
+    position: relative;
+    top: 50%;
 }
 #arrow-down{
     --fa-animation-duration: 3s;
