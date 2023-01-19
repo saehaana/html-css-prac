@@ -12,8 +12,9 @@ const Home = () => {
     return ( 
     <>
     <Container className='home-container'>
-        <Row>
-            <Col className="message-box">
+        <Row className='message-box-row'>
+            <Col xs={12} className="message-box">
+                <div className='test'>
                 <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -30,6 +31,32 @@ const Home = () => {
                 Welcome. <br></br> <br></br>
                 I'm a full-stack engineer from the Northern Virginia area. My desires are to innovate modern design and bring clean functionality. 
                 </motion.p>
+                </div>
+            </Col>
+        </Row>
+        <Row className='resume-box-row'>
+            <Col xs={12} className='resume-box'>
+                <div className="test2">
+                <motion.div 
+                className = "resume"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, delay: 1.5}}
+                >
+                Resume 
+                </motion.div>
+                <motion.a 
+                href="/Saehaan A. Resume.pdf" 
+                target="_blank"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, delay: 1.5}}
+            >
+                <motion.div whileHover={{ scale: 1.2}} className='download'>
+                    <FontAwesomeIcon icon={faDownload} size="2x"/>
+                </motion.div>
+                </motion.a>
+                </div>
             </Col>
         </Row>
     {/*
