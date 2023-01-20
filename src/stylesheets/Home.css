@@ -34,18 +34,3 @@
 #arrow-down{
     --fa-animation-duration: 3s;
 }
-.resume-box-row{
-    position: relative;
-    top: 35%;
-    left:25%;
-    height:10%;
-}
-.resume-box{
-    position: relative;
-    width: 25%;
-}
-.resume{
-    height:45%;
-    width: 80%;
-    font-size: 1.5rem;
-}

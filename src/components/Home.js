@@ -1,9 +1,8 @@
 import React from 'react';
 import{Link} from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link';
+
 import '../stylesheets/Home.css';
-import{ motion } from "framer-motion"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowDown, faMouse } from '@fortawesome/free-solid-svg-icons';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -13,6 +12,10 @@ import Button from 'react-bootstrap/Button';
 import About from './About';
 import Projects from './Projects';
 import Contact from './Contact';
+
+import{ motion } from "framer-motion"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowDown, faMouse } from '@fortawesome/free-solid-svg-icons';
 
 const Home = () => {
     return ( 
@@ -36,7 +39,7 @@ const Home = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 1.5}}
                 >
-                <Button variant="primary" as={Link} to='/Contact'>Contact Me</Button>{''}
+                <Button variant="primary" as={HashLink} smooth to='#Contact'>Contact Me</Button>{''}
                 </motion.div>   
             </Col>
         </Row>

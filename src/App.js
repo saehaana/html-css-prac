@@ -100,9 +100,7 @@ const App = () => {
                             <Nav.Link as={HashLink} smooth to='#Contact'>Contact</Nav.Link>
                         </motion.div>
                     </Nav>
-                    <Nav>
-                        <Nav.Link href="#deets">Resume</Nav.Link>
-                    </Nav>
+                    <Nav.Link as={Link} to="Saehaan A. Resume.pdf" target="_blank">Resume</Nav.Link>
                 </Navbar.Collapse>
             </Container>
         </Navbar>

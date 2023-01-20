@@ -26,6 +26,9 @@ html,body{
     bottom:20%;
     text-align: center;
 }
+.nav-resume:active{
+    text-decoration: none;
+}
 .iconlist{
     position: absolute;
     width:20rem;
