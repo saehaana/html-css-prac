@@ -74,10 +74,9 @@ const App = () => {
             ) 
         :
         <>
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Container>
-                <Navbar.Brand as={Link} to ='/'>
-                Ausawin Saehaan</Navbar.Brand>
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
+            <Container >
+                <Navbar.Brand as={HashLink} smooth to ='#home-container'>Ausawin Saehaan</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">

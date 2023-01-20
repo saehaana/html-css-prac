@@ -3,7 +3,6 @@
     font-family: 'Courier New', Courier, monospace;
 }
 html,body{
-    scroll-behavior: smooth;
     margin: 0;
     height: 100%;
     overflow-x: hidden;
@@ -28,20 +27,4 @@ html,body{
 }
 .nav-resume:active{
     text-decoration: none;
-}
-.iconlist{
-    position: absolute;
-    width:20rem;
-    height:5vh;
-    bottom: 0;
-    list-style-type: none;
-}
-.iconlist li{
-    float:left;
-    display: inline;
-    padding: 5%;
-}
-.test{
-    position: relative;
-    top:100%;
 }

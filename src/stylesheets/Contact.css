@@ -1,3 +1,11 @@
 #Contact{
     height:100vh;
 }
+.iconlist{
+    list-style-type: none;
+}
+.iconlist li{
+    float:left;
+    display: inline;
+    padding: 5%;
+}

@@ -20,7 +20,7 @@ import { faArrowDown, faMouse } from '@fortawesome/free-solid-svg-icons';
 const Home = () => {
     return ( 
     <>
-    <Container className='home-container'>
+    <Container className='home-container' id='home-container'>
         <Row className='message-box-row'>
             <Col xs={12} className="message-box">
                 <motion.p 
