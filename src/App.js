@@ -16,11 +16,12 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 import PacmanLoader from "react-spinners/PacmanLoader";
 
 const App = () => {
     const [loading, setLoading] = useState(false);
+    const { scrollYProgress } = useScroll();
     
     useEffect(() => {
         setLoading(true)
@@ -76,21 +77,21 @@ const App = () => {
         <>
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
             <Container >
-                <Navbar.Brand as={HashLink} smooth to ='#home-container'>Ausawin Saehaan</Navbar.Brand>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Brand as={HashLink} smooth to ='#home-container'>A</Navbar.Brand>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
                         <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1, delay: .25}}>
-                        <Nav.Link as={HashLink} smooth to='#Projects'>Projects</Nav.Link>
+                        <Nav.Link as={HashLink} smooth to='#About'>About</Nav.Link>
                         </motion.div>
                         <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1, delay: .5}}>
-                            <Nav.Link as={HashLink} smooth to='#About'>About</Nav.Link>
+                            <Nav.Link as={HashLink} smooth to='#Projects'>Work</Nav.Link>
                         </motion.div>
                         <motion.div
                         initial={{ opacity: 0 }}

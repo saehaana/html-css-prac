@@ -4,7 +4,7 @@
 }
 .message-box-row{
     position: relative;
-    top: 15%;
+    top: 25%;
     display: flex;
     justify-content: center;
     text-align: left;
@@ -29,7 +29,7 @@
 }
 .mouse-row{
     position: relative;
-    top: 25%;
+    top: 30%;
 }
 #arrow-down{
     --fa-animation-duration: 3s;

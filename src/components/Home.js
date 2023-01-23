@@ -1,5 +1,4 @@
 import React from 'react';
-import{Link} from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
 
 import '../stylesheets/Home.css';
@@ -29,8 +28,9 @@ const Home = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 1.25}}
                 >
-                Welcome. <br></br> <br></br>
-                I'm a full-stack engineer from the Northern Virginia area. My desires are to innovate modern design and bring clean functionality. 
+                Welcome. <br></br>
+                My name is Ausawin Saehaan. <br></br> 
+                I'm a full-stack engineer based in the Northern Virginia area. My desires are to innovate modern design and functionality. 
                 </motion.p>
             </Col>
             <Col xs={12} className="contact-box">
@@ -59,8 +59,8 @@ const Home = () => {
         </Row>
     </Container>
 
-    <Projects/>
     <About/>
+    <Projects/>
     <Contact/>
     </>
     );

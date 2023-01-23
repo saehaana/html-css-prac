@@ -15,7 +15,12 @@ function Contact(){
         <Container id='Contact'>
             <Row>
                 <Col>
-                    <h1>Contact</h1>
+                    <motion.h1 
+                     initial={{ opacity: 0 }}
+                     whileInView={{ opacity: 1 }}
+                     transition={{ duration: .75}}
+                     viewport={{ once: true }}
+                    >Send me a message</motion.h1>
                 </Col>
             </Row>
         <div className='footer'> 
