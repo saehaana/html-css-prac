@@ -5,6 +5,13 @@
 .about-title{
     text-align: center;
 }
+.background{
+    text-align: center;
+    padding-top: 1rem;
+}
 .timeline{
     font-family: 'Courier New', Courier, monospace;
+}
+.tech-stack-box{
+    text-align: center;
 }

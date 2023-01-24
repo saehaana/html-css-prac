@@ -21,7 +21,7 @@ function Contact(){
                      whileInView={{ opacity: 1 }}
                      transition={{ duration: .75}}
                      viewport={{ once: true }}
-                    >Contact</motion.h1>
+                    >Get In Touch</motion.h1>
 
                     <motion.p>Send me a message</motion.p>
                     <a href="mailto:saehaana@gmail.com">Email</a>
@@ -55,7 +55,11 @@ function Contact(){
                         </a>
                         </motion.li>
                     </ul>
-                    <p className='copyright'>Created and Designed by Ausawin Saehaan</p>
+                    <p className='copyright'>
+                        Built and Designed by Ausawin Saehaan
+                        <br></br>
+                        &copy; Copyright 2023. All Rights Reserved
+                    </p>
                 </Col>
             </Row>
         </Container>

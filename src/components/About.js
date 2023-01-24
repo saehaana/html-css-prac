@@ -32,12 +32,20 @@ function About(){
                 </Col>
             </Row>
 
+            <br></br><br></br>
+
             <Row>
+                <Col className='background'>
+                    <p>Growing up, I was always playing around with computers 
+                    and whenever a software issue arose I didn't stop until the conflict was resolved!
+                    This drive ultimately led me to make a career out of it.
+                    </p>
+                </Col>
+
                 <Col>
                     <Timeline position='left' className='timeline'>
                         <TimelineItem>
-                            <TimelineOppositeContent
-                            >Ran my first "Hello World" in Java</TimelineOppositeContent>
+                            <TimelineOppositeContent>Ran my first "Hello World" in Java</TimelineOppositeContent>
                             <TimelineSeparator>
                                 <TimelineDot />
                                 <TimelineConnector />
@@ -67,6 +75,16 @@ function About(){
                             <TimelineContent>May 2022</TimelineContent>
                         </TimelineItem>
                     </Timeline>
+                </Col>
+
+                <Col xs={12} className='tech-stack-box'>
+                <br></br><br></br>
+                <p>Tech Stack</p>
+                <br></br><br></br>
+                <p>Backend - Java, Python, C, MySQL, PHP</p>
+                <p>Frontend - HTML, CSS, JavaScript</p>
+                <p>Frameworks - React, Bootstrap, Mockito, jUnit, pytest, unittest</p>
+                <p>Management Tools/Other - Git, GitHub, CI/CD, AWS EC2, JSON, XML</p>
                 </Col>
             </Row>
 
