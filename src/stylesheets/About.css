@@ -2,3 +2,9 @@
     height:100vh;
     padding-top: 3.75rem;
 }
+.about-title{
+    text-align: center;
+}
+.timeline{
+    font-family: 'Courier New', Courier, monospace;
+}

@@ -1,12 +1,16 @@
 #Contact{
     height:100vh;
     padding-top: 3.75rem;
+    text-align: center;
 }
-.iconlist{
-    list-style-type: none;
+.contact-title{
+    text-align: center;
 }
-.iconlist li{
-    float:left;
-    display: inline;
-    padding: 5%;
+.copyright-box{
+    position: fixed; 
+    bottom: 0;
+}
+.copyright{
+    font-size: 1rem;
+    text-align: center;
 }

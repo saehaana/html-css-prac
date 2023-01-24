@@ -16,39 +16,48 @@ function Contact(){
             <Row>
                 <Col>
                     <motion.h1 
+                     className='contact-title'
                      initial={{ opacity: 0 }}
                      whileInView={{ opacity: 1 }}
                      transition={{ duration: .75}}
                      viewport={{ once: true }}
-                    >Send me a message</motion.h1>
+                    >Contact</motion.h1>
+
+                    <motion.p>Send me a message</motion.p>
+                    <a href="mailto:saehaana@gmail.com">Email</a>
                 </Col>
             </Row>
-        <div className='footer'> 
-        <a href="mailto:saehaana@gmail.com">Contact</a>
-        <ul className = "iconlist">
-            <motion.li
-                className = "github" 
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1, delay: .75}}
-            >        
-                <a href="https://github.com/saehaana" target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon inverse icon= {faGithub} size="3x"/>
-                </a>
-            </motion.li>
-            <motion.li 
-                className = "linkedin"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1, delay: .75}}
-            > 
-            <a href="https://www.linkedin.com/in/saehaana/" target="_blank" rel="noreferrer">
-                <FontAwesomeIcon inverse icon= {faLinkedin} size="3x"/>
-            </a>
-            </motion.li>
-        </ul>
-        </div>
 
+        </Container>
+        <Container className='col align-self-end'>
+            <Row>
+                <Col>
+                    <ul className = "nav justify-content-center">
+                        <motion.li
+                         className = "nav-item" 
+                         initial={{ opacity: 0 }}
+                         whileInView={{ opacity: 1 }}
+                         transition={{ duration: .75}}
+                         viewport={{ once: true }}>        
+                            <a href="https://github.com/saehaana" target="_blank" rel="noreferrer">
+                                <FontAwesomeIcon inverse icon= {faGithub} size="3x"/>
+                            </a>
+                        </motion.li>
+                        <motion.li 
+                            className = "nav-item"
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            transition={{ duration: .75}}
+                            viewport={{ once: true }}
+                        > 
+                        <a href="https://www.linkedin.com/in/saehaana/" target="_blank" rel="noreferrer">
+                            <FontAwesomeIcon inverse icon= {faLinkedin} size="3x"/>
+                        </a>
+                        </motion.li>
+                    </ul>
+                    <p className='copyright'>Created and Designed by Ausawin Saehaan</p>
+                </Col>
+            </Row>
         </Container>
         </>
     )

@@ -14,11 +14,15 @@ function Projects(){
             <Row>
                 <Col>
                     <motion.h1 
+                     className='projects-title'
                      initial={{ opacity: 0 }}
                      whileInView={{ opacity: 1 }}
                      transition={{ duration: .75}}
                      viewport={{ once: true }}
                     >My Work</motion.h1>
+
+                    <motion.p></motion.p>
+                    
                 </Col>
             </Row>
 

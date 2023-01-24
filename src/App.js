@@ -16,12 +16,11 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import PacmanLoader from "react-spinners/PacmanLoader";
 
 const App = () => {
     const [loading, setLoading] = useState(false);
-    const { scrollYProgress } = useScroll();
     
     useEffect(() => {
         setLoading(true)
