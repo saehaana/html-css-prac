@@ -9,7 +9,42 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { motion } from "framer-motion";
 
+import Button from '@mui/material/Button';
+import Snackbar from '@mui/material/Snackbar';
+import IconButton from '@mui/material/IconButton';
+import CloseIcon from '@mui/icons-material/Close';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+
+
 function Contact(){
+    const [open, setOpen] = React.useState(false);
+    const handleClick = () => {
+    setOpen(true);
+    };
+
+    const handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    setOpen(false);
+    };
+
+    const action = (
+    <React.Fragment>
+      <Button color="secondary" size="small" onClick={handleClose}></Button>
+      <IconButton
+        size="small"
+        aria-label="close"
+        color="inherit"
+        onClick={handleClose}
+      >
+        <CloseIcon fontSize="small" />
+      </IconButton>
+    </React.Fragment>
+    );
+
     return (
         <>
         <Container id='Contact'>
@@ -22,13 +57,36 @@ function Contact(){
                      transition={{ duration: .75}}
                      viewport={{ once: true }}
                     >Get In Touch</motion.h1>
-
-                    <motion.p>Send me a message</motion.p>
-                    <a href="mailto:saehaana@gmail.com">Email</a>
                 </Col>
             </Row>
 
+            <Row>
+                <Col>
+                <Box
+                component="form" 
+                sx={{'& > :not(style)': { m: 1, width: '25ch' },}} 
+                noValidate autoComplete="off">
+                <TextField id="outlined-basic" label="First Name" variant="outlined" />
+                <TextField id="outlined-basic" label="Last Name" variant="outlined" />
+                <TextField id="outlined-basic" label="Email" variant="outlined" required/>
+                </Box>
+                </Col>
+                <Col xs={12}>
+                <TextField id="outlined-multiline-static" label="Message" multiline rows={4} fullWidth defaultValue="Default Value"/>
+                </Col>
+                <div>
+                    <Button onClick={handleClick}>Submit</Button>
+                    <Snackbar
+                        open={open}
+                        autoHideDuration={6000}
+                        onClose={handleClose}
+                        message="Email Sent"
+                        action={action}/>
+                    </div>
+            </Row>
+
         </Container>
+        
         <Container className='col align-self-end'>
             <Row>
                 <Col>

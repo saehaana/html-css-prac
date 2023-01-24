@@ -53,18 +53,20 @@ function About(){
                             <TimelineContent>Aug 2019</TimelineContent>
                         </TimelineItem>
                         <TimelineItem>
+                            <TimelineOppositeContent>a</TimelineOppositeContent>
                             <TimelineSeparator>
                                 <TimelineDot />
                                     <TimelineConnector />
                             </TimelineSeparator>
-                            <TimelineContent>2</TimelineContent>
+                            <TimelineContent>2020</TimelineContent>
                         </TimelineItem>
                         <TimelineItem>
+                            <TimelineOppositeContent>b</TimelineOppositeContent>
                             <TimelineSeparator>
                                 <TimelineDot />
                                     <TimelineConnector />
                             </TimelineSeparator>
-                            <TimelineContent>3</TimelineContent>
+                            <TimelineContent>2021</TimelineContent>
                         </TimelineItem>
                         <TimelineItem>
                             <TimelineOppositeContent>Graduated from Virginia Commonwealth University</TimelineOppositeContent>
