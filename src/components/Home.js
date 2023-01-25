@@ -53,7 +53,7 @@ const Home = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 2}}>
-                <Tooltip title="Scroll Down" placement="bottom">
+                <Tooltip title="Scroll Down!" placement="bottom">
                 <FontAwesomeIcon icon={faMouse} size="2x"/>
                 </Tooltip>
                 <FontAwesomeIcon icon={faArrowDown} beat size="2x" id='arrow-down'/>

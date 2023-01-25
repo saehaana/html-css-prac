@@ -16,7 +16,6 @@ import CloseIcon from '@mui/icons-material/Close';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 
-
 function Contact(){
     const [open, setOpen] = React.useState(false);
     const handleClick = () => {
@@ -66,25 +65,31 @@ function Contact(){
                 component="form" 
                 sx={{'& > :not(style)': { m: 1, width: '25ch' },}} 
                 noValidate autoComplete="off">
-                <TextField id="outlined-basic" label="First Name" variant="outlined" />
-                <TextField id="outlined-basic" label="Last Name" variant="outlined" />
-                <TextField id="outlined-basic" label="Email" variant="outlined" required/>
+                
+                <TextField id="outlined-basic" label="First Name" variant="outlined" 
+                InputLabelProps={{style: { color: '#fff', fontFamily:'monospace' } }}/>
+                <TextField id="outlined-basic" label="Last Name" variant="outlined" 
+                InputLabelProps={{style: { color: '#fff', fontFamily:'monospace' } }}/>
+                <TextField id="outlined-basic" label="Email" variant="outlined" color="warning" required
+                InputLabelProps={{style: { color: '#fff', fontFamily:'monospace' } }}/>
                 </Box>
                 </Col>
                 <Col xs={12}>
-                <TextField id="outlined-multiline-static" label="Message" multiline rows={4} fullWidth defaultValue="Default Value"/>
+                <TextField id="outlined-multiline-static" label="Message" multiline rows={4} fullWidth
+                InputLabelProps={{style: { color: '#fff', fontFamily:'monospace' } }}/>
                 </Col>
-                <div>
-                    <Button onClick={handleClick}>Submit</Button>
-                    <Snackbar
-                        open={open}
-                        autoHideDuration={6000}
-                        onClose={handleClose}
-                        message="Email Sent"
-                        action={action}/>
-                    </div>
             </Row>
-
+            
+            <br></br>
+            <div>
+            <Button onClick={handleClick} variant="contained">Send</Button>
+            <Snackbar
+                open={open}
+                autoHideDuration={6000}
+                onClose={handleClose}
+                message="Email Sent"
+                action={action}/>
+            </div>
         </Container>
         
         <Container className='col align-self-end'>
