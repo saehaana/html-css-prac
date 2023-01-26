@@ -1,7 +1,19 @@
 #Projects{
     height:100vh;
     padding-top: 4rem;
+    font-size: 2rem;
 }
 .projects-title{
     text-align: center;
+}
+.table{
+    text-align: left;
+}
+tr{
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+td{
+    padding:2rem;
 }

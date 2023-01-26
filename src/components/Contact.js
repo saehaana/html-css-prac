@@ -55,7 +55,7 @@ function Contact(){
                      whileInView={{ opacity: 1 }}
                      transition={{ duration: .75}}
                      viewport={{ once: true }}
-                    >Get In Touch</motion.h1>
+                    >Let's Get In Touch</motion.h1>
                 </Col>
             </Row>
 
@@ -79,7 +79,7 @@ function Contact(){
                 InputLabelProps={{style: { color: '#fff', fontFamily:'monospace' } }}/>
                 </Col>
             </Row>
-            
+
             <br></br>
             <div>
             <Button onClick={handleClick} variant="contained">Send</Button>
