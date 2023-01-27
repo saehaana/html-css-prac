@@ -17,7 +17,7 @@ function Projects(){
                      className='projects-title'
                      initial={{ opacity: 0 }}
                      whileInView={{ opacity: 1 }}
-                     transition={{ duration: .75}}
+                     transition={{ duration: .5}}
                      viewport={{ once: true }}
                     >My Work</motion.h1>
                 </Col>

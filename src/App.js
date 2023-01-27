@@ -99,7 +99,12 @@ const App = () => {
                             <Nav.Link as={HashLink} smooth to='#Contact'>Contact</Nav.Link>
                         </motion.div>
                     </Nav>
+                    <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1, delay: 1}}>
                     <Nav.Link as={Link} to="Saehaan A. Resume.pdf" target="_blank">Resume</Nav.Link>
+                    </motion.div>
                 </Navbar.Collapse>
             </Container>
         </Navbar>

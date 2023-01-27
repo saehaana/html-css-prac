@@ -53,7 +53,7 @@ function Contact(){
                      className='contact-title'
                      initial={{ opacity: 0 }}
                      whileInView={{ opacity: 1 }}
-                     transition={{ duration: .75}}
+                     transition={{ duration: .5}}
                      viewport={{ once: true }}
                     >Let's Get In Touch</motion.h1>
                 </Col>
