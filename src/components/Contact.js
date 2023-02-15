@@ -66,16 +66,14 @@ function Contact(){
                 sx={{'& > :not(style)': { m: 1, width: '25ch' },}} 
                 noValidate autoComplete="off">
                 
-                <TextField id="outlined-basic" label="First Name" variant="outlined" 
-                InputLabelProps={{style: { color: '#fff', fontFamily:'monospace' } }}/>
-                <TextField id="outlined-basic" label="Last Name" variant="outlined" 
-                InputLabelProps={{style: { color: '#fff', fontFamily:'monospace' } }}/>
                 <TextField id="outlined-basic" label="Email" variant="outlined" color="warning" required
+                InputLabelProps={{style: { color: '#fff', fontFamily:'monospace' } }}/>
+                <TextField id="outlined-basic" label="Subject" variant="outlined" 
                 InputLabelProps={{style: { color: '#fff', fontFamily:'monospace' } }}/>
                 </Box>
                 </Col>
                 <Col xs={12}>
-                <TextField id="outlined-multiline-static" label="Message" multiline rows={4} fullWidth
+                <TextField id="outlined-multiline-static" label="Message" multiline rows={3} fullWidth
                 InputLabelProps={{style: { color: '#fff', fontFamily:'monospace' } }}/>
                 </Col>
             </Row>
@@ -97,7 +95,7 @@ function Contact(){
                 <Col>
                     <ul className = "nav justify-content-center">
                         <motion.li
-                         className = "nav-item" 
+                         className = "nav-item-github" 
                          initial={{ opacity: 0 }}
                          whileInView={{ opacity: 1 }}
                          transition={{ duration: .75}}
@@ -107,7 +105,7 @@ function Contact(){
                             </a>
                         </motion.li>
                         <motion.li 
-                            className = "nav-item"
+                            className = "nav-item-linkedin"
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
                             transition={{ duration: .75}}
